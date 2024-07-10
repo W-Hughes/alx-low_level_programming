@@ -6,7 +6,8 @@
  *@s: The string to check through.
  *@accept: The accepting string.
  *
- * Return: A pointer to the byte matching byte, otherwise return NULL.
+ * Return: A pointer to the bytes in the source string that marches the
+ * one inte the accept, otherwise NULL if no such byte is found.
  */
 
 char *_strpbrk(char *s, char *accept)
