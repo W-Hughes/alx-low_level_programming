@@ -1,24 +1,6 @@
 #include "main.h"
 
 /**
- *is_palindrome - Checks if a string is palindrome.
- *@s: Pointer to the sting to check.
- *
- * Return: 1 if palindrome, otherwise 0.
- */
-int is_palindrome(char *s)
-{
-	int len;
-
-	if (*s == '\0')
-		return (1);
-
-	len = _strlen_recursion(s) - 1;
-
-	return (check_palindrome(s, 0, len));
-}
-
-/**
  *check_palindrome - Helper function to check if a
  *string is palindrome.
  *@s: Pointer to the sting to check.
@@ -27,6 +9,7 @@ int is_palindrome(char *s)
  *
  * Return: 1 if palindrome, otherwise 0.
  */
+
 int check_palindrome(char *s, int start, int end)
 {
 	if (start >= end)
@@ -38,6 +21,8 @@ int check_palindrome(char *s, int start, int end)
 
 	return (check_palindrome(s, start + 1, end - 1));
 }
+
+
 /**
  *_strlen_recursion - Calculates the length of a string.
  *@s: Pointer to the sting to check.
@@ -52,3 +37,23 @@ int _strlen_recursion(char *s)
 
 	return (_strlen_recursion(s + 1) + 1);
 }
+
+/**
+ *is_palindrome - Checks if a string is palindrome.
+ *@s: Pointer to the sting to check.
+ *
+ * Return: 1 if palindrome, otherwise 0.
+ */
+
+int is_palindrome(char *s)
+{
+	int len;
+
+	if (*s == '\0')
+		return (1);
+
+	len = _strlen_recursion(s) - 1;
+
+	return (check_palindrome(s, 0, len));
+}
+
