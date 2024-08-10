@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- *clear_bit - Sets the value of a bit at a given
- *index argument to 0.
+ *clear_bit - Sets the value of a bit at a given index argument to 0.
  *@n: number
  *@index: index starting from 0.
+ *
+ *Return: 1 if success, otherwise -1.
  *
  */
 
