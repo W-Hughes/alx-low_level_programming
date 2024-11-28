@@ -1,1 +1,1 @@
-PROJECT: 0x18 - Dynamic Librarires
+PROJECT: 0x18 - Dynamic Libraries.
